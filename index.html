@@ -56,6 +56,92 @@
             margin: 30px 0 0 30px;
             font-family: "Open Sans", sans-serif;
         }
+       .container1 .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .container1 .img-box .image img{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        margin: 10px 10px;
+       }
+       .container2 .img-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .container2 .img-box .image img{
+        width: 250px;
+        height: 250px;
+        background-color: white;
+        margin: 10px 10px;
+       }
+
+
+
+
+       .icons{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .icons .fa-solid{
+        color: yellow;
+        box-sizing: border-box;
+        height: 30px;
+        padding: 4px;
+        margin: 10px 10px;
+       }
+       .form-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(background\ image.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+       }
+       .form-container form{
+        width: 400px;
+        height: 100%;
+        background-color: lightgray;
+        margin: 30px;
+        padding: 30px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-family: "Open Sans", sans-serif;
+       }
+       .form-container form input{
+        width: 95%;
+        margin: 5px;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+       }
+       .form-container form textarea{
+        width: 95%;
+        margin: 5px;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+       }
+       .form-container form #checkbox{
+        width: 5%;
+       }
+       .form-container form button{
+        margin: 10px 37%;
+        padding: 15px 30px;
+        color: white;
+        background-color: rgb(67, 133, 67);
+        border: none;
+        font-size: 17px;
+        border-radius: 10px;
+
+       }
     </style>
 </head>
 
@@ -76,13 +162,73 @@
         <a href="#">OFFERS</a>
         <a href="#">BLOGS</a>
     </div>
-    <h2 style="text-decoration: underline;"><i class="fa-regular fa-star"></i>Shop by Brand</h2>
-    <div id="imgs">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+    <section class="container1">
+        <h2 style="text-decoration: underline;"><i class="fa-regular fa-star"></i>Shop by Brand</h2>
+        <div class="img-box">
+            <div class="image">
+                <img src="bottle.webp" alt="milton bottles">
+            </div>
+            <div class="image">
+                <img src="bottle.webp" alt="milton bottles">
+            </div>
+            <div class="image">
+                <img src="bottle.webp" alt="milton bottles">
+            </div>
+            <div class="image">
+                <img src="bottle.webp" alt="milton bottles">
+            </div>
+        </div>
+    </section>
+    <section class="container2">
+        <div class="img-box">
+            <div class="image">
+                <img src="bottle.webp" alt="milton bottles">
+            </div>
+            <div class="image">
+                <img src="bottle.webp" alt="milton bottles">
+            </div>
+            <div class="image">
+                <img src="bottle.webp" alt="milton bottles">
+            </div>
+            <div class="image">
+                <img src="bottle.webp" alt="milton bottles">
+            </div>
+        </div>
+    </section>
+    <section class="form-container">
+        <form action="#">
+            <label for="email">Email:</label>
+            <input type="email"  id="email" placeholder="eve.holt@reqres.in" required>
+            <label for="password">password(min. 8 characters):</label>
+            <input type="password" id="password" required>
+            <label for="textarea">Message:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="3"></textarea> <br>
+            <br>
+            <label for="rating">Website Rating:</label> <br>
+            <input type="radio" id="rating"> Excellent
+            <input type="radio" id="rating"> Good
+            <input type="radio" id="rating"> Average
+            <input type="radio" id="rating"> Poor
+            <label for="age">Age:(10-100)</label>
+            <input type="number" min="10" max="100">
+            <label for="url">Website Url <sub>(optional)</sub></label>
+            <input type="url" id="url">
+            <input type="checkbox" id="checkbox">I agree to the terms and conditions <br>
+            <button>Submit</button>
+
+                
+        </form>
+    </section>
+
+   <footer>
+    <div class="icons">
+        <div><i class="fa-solid fa-music"></i></div>
+        <div><i class="fa-solid fa-music"></i></div>
+        <div><i class="fa-solid fa-music"></i></div>
+        <div><i class="fa-solid fa-music"></i></div>
+        <div><i class="fa-solid fa-music"></i></div>
     </div>
+   </footer>
 </body>
 
 </html>
